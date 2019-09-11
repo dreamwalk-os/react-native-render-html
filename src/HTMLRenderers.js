@@ -175,7 +175,6 @@ export function iframe(htmlAttribs, children, convertedCSSStyles, passProps) {
         key={passProps.key}
         source={{ uri: htmlAttribs.src }}
         style={[style, { backgroundColor: "white", opacity: 0.99 }]}
-        startInLoadingState={true}
         allowsInlineMediaPlayback={false}
         domStorageEnabled={true}
         javaScriptEnabled={true}
