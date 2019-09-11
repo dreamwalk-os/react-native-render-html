@@ -179,11 +179,6 @@ export function iframe(htmlAttribs, children, convertedCSSStyles, passProps) {
         domStorageEnabled={true}
         javaScriptEnabled={true}
         mixedContentMode="always"
-        renderLoading={() => (
-          <View style={{ marginTop: 15, marginBottom: 15, backgroundColor: "white" }}>
-            <ActivityIndicator size="small" color="black" />
-          </View>
-        )}
       />
 
       <View style={{ height: 56, width: width, marginLeft: -30, marginRight: -30 }}>
