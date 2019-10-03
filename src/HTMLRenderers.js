@@ -5,7 +5,7 @@ import HTMLImage from "./HTMLImage";
 
 import TouchableCard from "../../../src/components/TouchableCard";
 
-import WebView from "react-native-android-fullscreen-webview-video";
+import WebView from "react-native-webview";
 
 export function a(htmlAttribs, children, convertedCSSStyles, passProps) {
   const style = _constructStyles({
@@ -176,6 +176,7 @@ export function iframe(htmlAttribs, children, convertedCSSStyles, passProps) {
         source={{ uri: htmlAttribs.src }}
         style={[style, { backgroundColor: "white", opacity: 0.99 }]}
         allowsInlineMediaPlayback={false}
+        allowsFullscreenVideo={true}
         domStorageEnabled={true}
         javaScriptEnabled={true}
         mixedContentMode="always"
